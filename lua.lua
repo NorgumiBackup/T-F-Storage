@@ -60,17 +60,17 @@ local function resize()
                 
                 local target
                 if title.Text == "300 METER DASH" then
-                    target = Vector3.new(v.Size.X, v.Size.Y, 290)
+                    target = Vector3.new(v.Size.X, v.Size.Y, 285)
                 elseif title.Text == "60 METER DASH" then
-                    target = Vector3.new(v.Size.X, v.Size.Y, 65)
+                    target = Vector3.new(v.Size.X, v.Size.Y, 60)
                 elseif title.Text == "100 METER DASH" then
-                    target = Vector3.new(v.Size.X, v.Size.Y, 65)
+                    target = Vector3.new(v.Size.X, v.Size.Y, 60)
                 elseif table.find(races, title.Text) then
-                    target = Vector3.new(v.Size.X, v.Size.Y, 90)
+                    target = Vector3.new(v.Size.X, v.Size.Y, 85)
                 elseif title.Text:find("RELAY") then
-                    target = Vector3.new(v.Size.X, v.Size.Y, 70)
+                    target = Vector3.new(v.Size.X, v.Size.Y, 65)
                 else
-                    target = Vector3.new(v.Size.X, v.Size.Y, 385)
+                    target = Vector3.new(v.Size.X, v.Size.Y, 380)
                 end
                 
                 if v.Size ~= target then
